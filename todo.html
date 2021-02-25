@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo</title>
+    <link rel="stylesheet" href="todo.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="Container">
+        <div class="paper">
+            <h1 id="title">THINGS TODO:</h1>
+            <form>
+                <input 
+                    id="todo"
+                    type="text"
+                    placeholder="Enter Task Here"
+                    required
+                    oninput="myValue()"
+                />
+                <button id="button" type="submit"><i class="fas fa-plus"></i></button>
+                <!-- <button id="taskbutton">tasks</button> -->
+            </form>
+            <ul id="todoList"></ul>
+        </div>
+    </div>
+    <script src="todo.js"></script>
+    <script src="https://kit.fontawesome.com/2f1c649cc2.js" crossorigin="anonymous"></script>
+</body>
+</html>
